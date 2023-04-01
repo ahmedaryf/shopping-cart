@@ -31,6 +31,7 @@ function MyNavbar() {
                   <Link onClick={closeOffCanvas} to='/'>Home</Link>
                   <Link onClick={closeOffCanvas} to='/about'>About</Link>
                   <Link onClick={closeOffCanvas} to='/shop'>Shop</Link>
+                  <Link onClick={closeOffCanvas} to='/cart'>Cart</Link>
                 </Nav>
 
               </Offcanvas.Body>

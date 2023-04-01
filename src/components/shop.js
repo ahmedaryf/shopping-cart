@@ -6,7 +6,7 @@ import Product from './product';
 
 
 function Shop() {
-    const {addToCart} = useContext(ShopContext);
+    const {addToCart, cartItems} = useContext(ShopContext);
  
   return (
     <div className='container-fluid'>
