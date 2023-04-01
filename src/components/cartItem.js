@@ -8,14 +8,14 @@ function CartItem(props) {
   return (
     <div>
        <div>
-        <img src={productImage} alt='' width='200'/>
+        <img src={productImage} alt='' width='100'/>
         <div>
             <h5>{productName}</h5>
             <h5>${price}</h5>
             <div>
-                <button className='btn btn-danger' onClick={() => removeFromCart(productId)}> - </button>
-                <input style={{width: '100px'}} className='text-center form-control-sm' value={cartItems[productId]} onChange={(e) => updateCartItem(Number(e.target.value), productId)}/>
-                <button className='btn btn-success' onClick={() => addToCart(productId)}> + </button>
+                <button onClick={() => removeFromCart(productId)}> - </button>
+                <input style={{width: '100px'}} className='text-center' value={cartItems[productId]} onChange={(e) => updateCartItem(Number(e.target.value), productId)}/>
+                <button  onClick={() => addToCart(productId)}> + </button>
             </div>
         </div>
        </div>
