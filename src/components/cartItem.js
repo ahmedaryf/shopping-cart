@@ -3,7 +3,7 @@ import { ShopContext } from '../context/shop-context';
 
 function CartItem(props) {
     const {productId, productName, price, productImage} = props.data;
-    const {cartItems, addToCart, removeFromCart} = useContext(ShopContext);
+    const {cartItems, updateCartItem, addToCart, removeFromCart} = useContext(ShopContext);
 
   return (
     <div>
@@ -14,7 +14,7 @@ function CartItem(props) {
             <h5>${price}</h5>
             <div>
                 <button className='btn btn-danger' onClick={() => removeFromCart(productId)}> - </button>
-                <input style={{width: '100px'}} className='text-center form-control-sm' value={cartItems[productId]}/>
+                <input style={{width: '100px'}} className='text-center form-control-sm' value={cartItems[productId]} onChange={(e) => updateCartItem(Number(e.target.value), productId)}/>
                 <button className='btn btn-success' onClick={() => addToCart(productId)}> + </button>
             </div>
         </div>
