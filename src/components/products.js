@@ -2,6 +2,7 @@ import iPhone from "../assets/images/iPhone.jpg"
 import laptop from "../assets/images/macbook.jpg"
 import airpod from "../assets/images/airpod-max.jpg"
 import appleWatch from "../assets/images/appleWatch.jpg"
+import iPad from "../assets/images/iPad.jpg"
 
 export const products = [
     {
@@ -27,6 +28,12 @@ export const products = [
         productName: "Apple Watch",
         price: 850,
         productImage: appleWatch
+    },
+    {
+        productId: 5,
+        productName: "iPad Pro",
+        price: 1150,
+        productImage: iPad
     }
 ]
 
